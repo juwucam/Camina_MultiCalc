@@ -30,23 +30,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.btnMass:
-                Intent intent=new Intent(MainActivity.this,MassFormula.class);
+                Intent intent = new Intent(MainActivity.this, MassFormula.class);
                 startActivity(intent);
                 break;
             case R.id.btnForce:
-                Intent intent1=new Intent(MainActivity.this,ForceFormula.class);
+                Intent intent1 = new Intent(MainActivity.this, ForceFormula.class);
                 startActivity(intent1);
                 break;
             case R.id.btnPressure:
-                Intent intent2=new Intent(MainActivity.this,PressureFormula.class);
+                Intent intent2 = new Intent(MainActivity.this, PressureFormula.class);
                 startActivity(intent2);
                 break;
             case R.id.btnSpeed:
-                Intent intent3=new Intent(MainActivity.this,SpeedFormula.class);
+                Intent intent3 = new Intent(MainActivity.this, SpeedFormula.class);
                 startActivity(intent3);
                 break;
-
+        }
     }
 }
