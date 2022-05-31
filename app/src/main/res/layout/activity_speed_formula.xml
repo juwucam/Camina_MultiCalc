@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpeedFormula">
+
+    <TextView
+        android:id="@+id/textSpeedFormula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SPEED"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178" />
+
+    <ImageView
+        android:id="@+id/imageSpeedFormula"
+        android:layout_width="334dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/textSpeedFormula"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/textSpeedFormula"
+        app:layout_constraintTop_toBottomOf="@+id/textSpeedFormula"
+        app:srcCompat="@drawable/speed" />
+
+    <EditText
+        android:id="@+id/editTextSDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="distance"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/imageSpeedFormula"
+        app:layout_constraintStart_toStartOf="@+id/imageSpeedFormula"
+        app:layout_constraintTop_toBottomOf="@+id/imageSpeedFormula" />
+
+    <EditText
+        android:id="@+id/editTextSTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="time"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSDistance"
+        app:layout_constraintStart_toStartOf="@+id/editTextSDistance"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSDistance" />
+
+    <TextView
+        android:id="@+id/SResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Result"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnCalcSpeed"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/btnCalcSpeed"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcSpeed" />
+
+    <Button
+        android:id="@+id/btnCalcSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSTime"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/editTextSTime"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSTime" />
+</androidx.constraintlayout.widget.ConstraintLayout>

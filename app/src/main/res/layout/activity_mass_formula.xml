@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MassFormula">
+
+    <TextView
+        android:id="@+id/textMassFormula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MASS"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <ImageView
+        android:id="@+id/imageMassFormula"
+        android:layout_width="285dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/textMassFormula"
+        app:layout_constraintStart_toStartOf="@+id/textMassFormula"
+        app:layout_constraintTop_toBottomOf="@+id/textMassFormula"
+        app:srcCompat="@drawable/mass" />
+
+    <EditText
+        android:id="@+id/editTextMForce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="force"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/imageMassFormula"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/imageMassFormula"
+        app:layout_constraintTop_toBottomOf="@+id/imageMassFormula" />
+
+    <EditText
+        android:id="@+id/editTextMAcceleration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="acceleration"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/editTextMForce"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextMForce"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMForce" />
+
+    <TextView
+        android:id="@+id/MResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Result"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnCalcMass"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/btnCalcMass"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcMass" />
+
+    <Button
+        android:id="@+id/btnCalcMass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="@+id/editTextMAcceleration"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toStartOf="@+id/editTextMAcceleration"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMAcceleration" />
+</androidx.constraintlayout.widget.ConstraintLayout>
